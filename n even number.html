@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Even Numbers</title>
+</head>
+<body>
+  <h1>Even Numbers</h1>
+  <ul id="even-numbers"></ul>
+
+  <script>
+    // Generate and display even numbers from 2 to 20
+    const evenList = document.getElementById("even-numbers");
+
+    for (let i = 2; i <= 20; i += 2) {
+      const li = document.createElement("li");
+      li.textContent = i;
+      evenList.appendChild(li);
+    }
+  </script>
+</body>
+</html>
